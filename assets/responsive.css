@@ -1,0 +1,254 @@
+@media (min-width: 1600px){
+    header.desktop-header {
+        padding: 40px 60px;
+        width: 300px;
+    }
+}
+@media (max-width:1536px){
+    .container{
+        margin: 0 110px!important;
+    }
+    section.home .home-content{
+        margin: 0 375px;
+    }
+    .scroll-down{
+        left: -7px;
+    }
+}
+@media (max-width:1024px){
+    /* Custom Container */
+    .container{
+        margin: 0 5px!important;
+    }
+    /* Main */
+    .main-layout{
+        max-width: 1024px;
+    }
+    /* PC Header */
+    header.desktop-header{
+        overflow: hidden;
+    }
+    /* Mobile Header */
+    header.mobile-header{
+        margin: 10px 0;
+        height: 61.6px;
+        display: none;
+    }
+    /* Home */
+    section.home .home-content{
+        margin: 0 114px;
+        max-width: 520px;
+        padding: 0 13px;
+    }
+    section.home .home-content p{
+        width: 520px;
+    }
+    .scroll-down{
+        left: 2px;
+    }
+    /* Services */
+    .services-list{
+        padding: 2px;
+    }
+    /* Skills */
+    .skills-item{
+        max-width: 362px;
+    }
+    /* Prices */
+    .prices-item{
+        padding: 40px 45px;
+    }
+    /* Clients */
+    .clients-item .inner img{
+        max-width: 166.9px;
+    }
+    /* Contact */
+    .contact-item h4{
+        margin-bottom: 12px;
+    }
+    .contact-item p{
+        line-height: 24px;
+    }
+}
+@media only screen and (max-width: 991px){
+    header.mobile-header {
+        display: block;
+    }
+    header.desktop-header {
+        -webkit-transform: translateX(-240px);
+        transform: translateX(-240px);
+    }
+    header.desktop-header.open {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    .main-layout {
+        margin-left: 0;
+    }
+}
+@media (max-width: 820px) and (min-width:769px){
+    /* Custom Container */
+    .container{
+        margin: 0 65px!important;
+    }
+    /* Main */
+    .main-layout{
+        max-width: 1024px;
+    }
+    /* Mobile Header */
+    header.mobile-header .menu-icon{
+        margin-right: 24px;
+    }
+    header.mobile-header .site-title{
+        font-size: 18px;
+        font-weight: 900;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+    .mobile-item{
+        height:61.6px; 
+    }
+    /* Main Content */
+    main.content{
+        max-width: 768px;
+    }
+    /* Home */
+    section.home .home-content{
+        margin: 0 150px;
+    }
+    .scroll-down{
+        left: 40px;
+    }
+    /* Experience */
+    .timeline .content{
+        max-width: 280px;
+    }
+    /* Works */
+    .portfolio-filter{
+        display: block;
+    }
+    .pf-filter-wrapper{
+        display: none;
+    }
+    /* Prices */
+    .prices-item{
+        padding:40px 30px;
+    }
+    /* Clients */
+    .clients-item .inner img{
+        max-width: 150.9px;
+    }
+    /* Contact */
+    .contact-item p{
+        line-height: 24px;
+    }
+}
+@media (max-width: 768px){
+    /* Container */
+    .container{
+        margin: 0 39px!important;
+    }
+    /* Menu Mobile */
+    .menu-icon{
+        margin-right: 25px;
+    }
+    /* Home */
+    section.home .home-content{
+        margin: 0 125px;
+    }
+    .scroll-down {
+        left: 2px;
+    }
+    /* Works */
+    .portfolio-filter{
+        display: none;
+    }
+    .pf-filter-wrapper{
+        display: block;
+        margin-bottom: 24px;
+    }
+    /* Prices */
+    .prices-item {
+        padding: 40px 35px;
+    }
+    /* Clients */
+    .clients-item .inner img{
+        max-width: 150.9px;
+    }
+}
+@media (max-width: 767px){
+    /* Custom Container */
+    .container{
+        margin: 0 15px!important;
+    }
+    /* Home */
+    section.home{
+        padding: 100px 0;
+        height: auto;
+        min-height: auto;
+    }
+    section.home .home-content{
+        margin: 0 15px;
+        width: auto;
+    }
+    section.home .home-content h1{
+        font-size: 50px;
+    }
+    section.home .home-content p{
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .scroll-down{
+        display: none;
+    }
+    /* Menu */
+    .menu-icon{
+        margin-right: 25px;
+    }
+    /* Prices */
+    .prices-item{
+        margin-bottom: 30px;
+    }
+    /* Testi */
+    .test-list{
+        margin-right: 29px;
+    }
+    /* Blogs */
+    .blogs-info{
+        flex-direction: column;
+    }
+    .blogs-item{
+        max-width: 93%;
+        padding: 0 15px;
+        margin-bottom: 52px;
+    }
+    /* Contact */
+    .contact-item{
+        margin-bottom: 53px;
+    }    
+    .contact-form{
+        margin-top: -37px;
+    }
+
+    /* All */
+    .services-content, .skills-content, .exp-content, .works-content, .facts-content, 
+    .prices-content, .test-content, .blogs-content, .clients-content, .contact-content{
+        width: auto;
+        padding: 10px 10px;   
+    }
+    .services-box, .timeline .content p{
+        margin-right: 20px;
+    }
+
+    select.portfolio-filter-mobile, .portfolio-item .details, 
+    .portfolio-item .thumb img, .portfolio-item .mask, .facts-list{
+        max-width: 92%;
+    }
+    .prices-item, .clients-list, .contact-list{
+        max-width: 92%;
+    }
+}
+
+

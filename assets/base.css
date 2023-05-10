@@ -1,0 +1,752 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: auto!important;
+    scroll-padding-top: 1rem; 
+}
+body {
+    color: #888;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    max-width: 1920px;
+}
+.container{
+    padding:0!important;
+    margin-left: 240px!important;
+    margin-right: 240px!important;
+}
+.col-xl-10{
+    padding: 0!important;
+}
+/* Custom Bootstrap Start */
+.ps-pe-15{
+    padding:0 15px!important;
+}
+.mt-mb-15{
+    margin: 15px 0!important;
+}
+.mw-1080{
+    max-width: 1080px;
+}
+.d-open{
+    display: block;
+}
+/* Custom Bootstrap End */
+
+/* Sections Start */
+.section-title{
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Sections End */
+
+/* Navbar Menu Start */
+header.desktop-header {
+    background: #FFF;
+    border-right: solid 1px #ececec;
+    padding: 40px 30px 40px 40px;
+    position: fixed;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    min-height: 100vh;
+    top: 0;
+    width: 240px;
+    z-index: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+header.desktop-header .site-title {
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+header.desktop-header .site-title:hover{
+    color:#9013fe;
+    transition: 0.3s;
+    cursor: pointer;
+}
+header.desktop-header .vertical-menu {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+header.desktop-header .vertical-menu li {
+    padding: 8px 0;
+    position: relative;
+    list-style: none;
+    display: table;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+header.desktop-header .vertical-menu li a {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+}
+
+nav .vertical-menu li.active::after {
+    content: "";
+    background: #9013FE;
+    width: 100%;
+    height: 7px;
+    left: 1px;
+    opacity: 0.5;
+    bottom: 11px;
+    position: absolute;
+    z-index: -1;
+}
+nav .vertical-menu li::after {
+    content: "";
+    background: #9013FE;
+    width: 100%;
+    height: 0;
+    left: 1px;
+    opacity: 0.5;
+    bottom: 11px;
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+header.desktop-header .vertical-menu li a:after {
+    content: '';
+    background: #9013FE;
+    width: 100%;
+    height: 0;
+    left: 1px;
+    opacity: .5;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+header.desktop-header .vertical-menu li a:hover:after {
+    height: 7px;
+}
+header.desktop-header .search-button{
+    color: #888;
+    background: transparent;
+    display: block;
+    padding: 0;
+    line-height: 1;
+    border: 0;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+.search-button i{
+    color: #000;
+    margin-right: 12.3px;
+    font-weight: 900;
+    font-size: 14px;
+}
+header.desktop-header .social-items{
+    margin-top: 40px;
+    margin-bottom: 14px;
+}
+header.desktop-header .social-items li{
+    margin-right: 18.6px;
+    margin-left: -1px;
+}
+.list-inline-item a{
+    color: #000;
+}
+.social-items>li:hover a{
+    color: #9013FE;
+    transition: 0.3s;
+}
+header.desktop-header .footer{
+    margin-top: auto;
+}
+header.desktop-header .footer .search-button{
+    margin-bottom: 49px;
+    margin-top: 32px;
+}
+header.desktop-header .footer .copyright{
+    color:#999;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px; 
+}
+/* Navbar Menu End */
+
+/* Buttons */
+/* Button Home Start */
+.home-content .btn-port-hire{
+    margin-top: 48px;
+}
+.home-content .btn-port-hire .btn {
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 900;
+    overflow: hidden;
+    line-height: 1;
+    padding: 14px 28px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.home-content .btn-port-hire .btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+.home-content .btn-port-hire .btn-item {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.home-content .btn-port-hire .btn-item:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.home-content .btn-port-hire .btn-item:hover:before, .btn-item:focus:before, .btn-item:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+.home-content .btn-port-hire .btn-portfolio {
+    color: #FFF;
+    border: solid 3px #9013FE;
+    background: #9013FE;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 10px;
+}
+.home-content .btn-port-hire .btn-portfolio:before {
+    background: #FFF;
+}
+.home-content .btn-port-hire .btn-portfolio:hover, .btn-portfolio:focus {
+    color: #9013FE;
+    border-color: #9013FE;
+}
+.home-content .btn-port-hire .btn {
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 900;
+    overflow: hidden;
+    line-height: 12.6px;
+    padding: 16px 24px;
+    position: relative;
+    text-transform: uppercase;
+}
+.home-content .btn-port-hire .btn-item {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.home-content .btn-port-hire .btn-item:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.home-content .btn-port-hire .btn-item:hover:before, .btn-item:focus:before, .btn-item:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+.home-content .btn-port-hire .btn-hireme {
+    color: #000;
+    background: transparent;
+    border: solid 3px #000;
+}
+.home-content .btn-port-hire .btn-hireme:hover, .btn-hireme:focus {
+    color: #FFF;
+    border-color: #000;
+}
+.home-content .btn-hireme:before {
+    background: #000;
+}
+/* Button Home End */
+
+/* Button Works Start */
+.works-content .btn-port-hire{
+    margin-top: 46px;
+}
+.works-content .btn-port-hire .btn {
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 900;
+    overflow: hidden;
+    line-height: 1;
+    padding: 14px 28px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.works-content .btn-port-hire .btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+.works-content .btn-port-hire .btn-item {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.works-content .btn-port-hire .btn-item:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.works-content .btn-port-hire .btn-item:hover:before, .btn-item:focus:before, .btn-item:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+.works-content .btn-port-hire .btn-portfolio {
+    color: #FFF;
+    border: solid 3px #9013FE;
+    background: #9013FE;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 11.5px;
+}
+.works-content .btn-port-hire .btn-portfolio:before {
+    background: #FFF;
+}
+.works-content .btn-port-hire .btn-portfolio:hover, .btn-portfolio:focus {
+    color: #9013FE;
+    border-color: #9013FE;
+}
+.works-content .btn-port-hire .btn {
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 900;
+    overflow: hidden;
+    line-height: 0.9;
+    padding: 16px 24px;
+    position: relative;
+    text-transform: uppercase;
+}
+.works-content .btn-port-hire .btn-item {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.works-content .btn-port-hire .btn-item:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.works-content .btn-port-hire .btn-item:hover:before, .btn-item:focus:before, .btn-item:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+.fa-spinner{
+    margin-right: 10px;
+    display: none;
+}
+/* Button Works End */
+
+/* Button Prices Start */
+.prices-content .btn-port-hire{
+    margin-top: 30px;
+}
+.prices-content .btn-port-hire .btn {
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 900;
+    overflow: hidden;
+    line-height: 1;
+    padding: 14px 28px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.prices-content .btn-port-hire .btn:hover {
+    color: #9013FE;
+    text-decoration: none;
+}
+.prices-content .btn-port-hire .btn-item {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.prices-content .btn-port-hire .btn-item:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.prices-content .btn-port-hire .btn-item:hover:before, .btn-item:focus:before, .btn-item:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+.prices-content .btn-port-hire .btn-portfolio {
+    color: #FFF;
+    border: solid 3px #9013FE;
+    background: #9013FE;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 11.5px;
+}
+.prices-content .btn-port-hire .btn-portfolio:before {
+    background: #FFF;
+}
+.prices-content .btn-port-hire .btn-portfolio:hover, .btn-portfolio:focus {
+    color: #9013FE;
+    border-color: #9013FE;
+}
+.prices-content .btn-port-hire .btn {
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 900;
+    overflow: hidden;
+    line-height: 0.9;
+    padding: 16px 24px;
+    position: relative;
+    text-transform: uppercase;
+}
+.prices-content .btn-port-hire .btn-item {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.prices-content .btn-port-hire .btn-item:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.prices-content .btn-port-hire .btn-item:hover:before, .btn-item:focus:before, .btn-item:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+/* Button Prices End */
+
+/* Button Prices Mid Start */
+.btn-port-hire .btn-animation {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+} 
+.btn-port-hire .btn-animation:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.btn-port-hire .btn-animation:hover:before, .btn-animation:focus:before, .btn-animation:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}  
+.btn-port-hire .btn {
+    border-radius: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    overflow: hidden;
+    line-height: 1;
+    padding: 15px 24px;
+    position: relative;
+    text-transform: uppercase;
+}
+.btn-port-hire .btn:focus {
+    box-shadow: none;
+}  
+.btn-port-hire .btn:focus {
+    outline: 0;
+}
+.btn-port-hire .btn-alt-light {
+    color: #FFF;
+    background: transparent;
+    border: solid 3px #FFF;
+}
+.btn-port-hire .btn-alt-light:hover, .btn-alt-light:focus {
+    color: #9013FE;
+    border-color: #FFF;
+}
+.btn-port-hire .btn-alt-light:before {
+    background: #FFF;
+}  
+/* Button Prices Mid End */
+
+
+/* Button Contact Start */
+.contact-content .btn-port-hire{
+    margin-top: 46px;
+}
+.contact-content .btn-port-hire .btn {
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 900;
+    overflow: hidden;
+    line-height: 1;
+    padding: 14px 28px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-content .btn-port-hire .btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+.contact-content .btn-port-hire .btn-item {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.contact-content .btn-port-hire .btn-item:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.contact-content .btn-port-hire .btn-item:hover:before, .btn-item:focus:before, .btn-item:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+.contact-content .btn-port-hire .btn-portfolio {
+    color: #FFF;
+    border: solid 3px #9013FE;
+    background: #9013FE;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+}
+.contact-content .btn-port-hire .btn-portfolio:before {
+    background: #FFF;
+}
+.contact-content .btn-port-hire .btn-portfolio:hover, .btn-portfolio:focus {
+    color: #9013FE;
+    border-color: #9013FE;
+}
+.contact-content .btn-port-hire .btn {
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 900;
+    overflow: hidden;
+    line-height: 0.9;
+    padding: 16px 24px;
+    position: relative;
+    text-transform: uppercase;
+}
+.contact-content .btn-port-hire .btn-item {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.contact-content .btn-port-hire .btn-item:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.contact-content .btn-port-hire .btn-item:hover:before, .btn-item:focus:before, .btn-item:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+/* Button Contact End */
+
